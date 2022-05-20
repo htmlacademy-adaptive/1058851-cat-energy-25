@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/source/css/style.css">
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header block-width">
       <a href="#" class="main-header__logo">
         <img src="/source/img/cat_energy_logo.svg" alt="логотип кэт энерджи" width="33.3" height="37.6">
       </a>
@@ -18,18 +18,18 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#">
               главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               подбор программы
             </a>
@@ -39,65 +39,68 @@
     </header>
 
     <main class="main-container">
-      <h1 class="main-container__title">Подбор программы</h1>
-      <section class="questionnaire">
+      <h1 class="main-container__title block-width">Подбор программы</h1>
+      <section class="questionnaire block-width">
         <h2 class="visually-hidden">Анкета</h2>
-        <p class="questionnare__slogan">
+        <p class="questionnaire__slogan">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <form class="questionnare__form" action="https://echo.htmlacademy.ru">
-          <fieldset class="questionnare__fields fields">
-            <label for="questionnare-name">ИМЯ:*</label>
-            <input class="fields__name" type="text" id="questionnare-name" name="name" placeholder="барсик" required>
-            <label for="questionnare-weight">Вес (кг):*</label>
-            <input class="fields__weight" type="number" id="questionnare-weight" name="weight" placeholder="7" required>
-            <label for="questionnare-age">Возраст (лет):</label>
-            <input class="fields__age" type="number" id="questionnare-age" name="age" placeholder="7">
+        <form class="questionnaire__form" action="https://echo.htmlacademy.ru">
+          <fieldset class="questionnaire__fields fields">
+            <label for="questionnaire-name">ИМЯ:*</label>
+            <input class="fields__name" type="text" id="questionnaire-name" name="name" placeholder="барсик" required>
+            <label for="questionnaire-weight">Вес (кг):*</label>
+            <input class="fields__weight" type="number" id="questionnaire-weight" name="weight" placeholder="7" required>
+            <label for="questionnaire-age">Возраст (лет):</label>
+            <input class="fields__age" type="number" id="questionnaire-age" name="age" placeholder="7">
           </fieldset>
-          <fieldset class="questionnare__fields fields">
-            <input class="fields__slim" type="radio" id="questionnare-slim" name="slim">
-            <label for="questionnare-slim">похудение</label>
-            <input class="fields__weight-gain" type="radio" id="questionnare-weight-gain" name="weight-gain">
-            <label for="questionnare-weight-gain">Набор массы</label>
-            <input class="fields__unknown" type="radio" id="questionnare-unknown" name="unknown">
-            <label for="questionnare-unknown">Не знаю (Нужен ваш совет):</label>
+          <fieldset class="questionnaire__fields fields">
+            <input class="fields__slim" type="radio" id="questionnaire-slim" name="slim">
+            <label for="questionnaire-slim">похудение</label>
+            <input class="fields__weight-gain" type="radio" id="questionnaire-weight-gain" name="weight-gain">
+            <label for="questionnaire-weight-gain">Набор массы</label>
+            <input class="fields__unknown" type="radio" id="questionnaire-unknown" name="unknown">
+            <label for="questionnaire-unknown">Не знаю (Нужен ваш совет):</label>
           </fieldset>
           <h2 class="questionare__subtitle section-subtitle">Контактные данные (владельца кота)</h2>
-          <fieldset class="questionnare__fields fields">
-            <label for="questionnare-email">E-mail:*</label>
-            <input class="fields__email" type="email" id="questionnare-email" name="email" placeholder="kuklachev@gmail.com" required>
-            <label for="questionnare-phone">Телефон:*</label>
-            <input class="fields__phone" type="tel" id="questionnare-phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <fieldset class="questionnaire__fields fields">
+            <label for="questionnaire-email">E-mail:*</label>
+            <input class="fields__email" type="email" id="questionnaire-email" name="email" placeholder="kuklachev@gmail.com" required>
+            <label for="questionnaire-phone">Телефон:*</label>
+            <input class="fields__phone" type="tel" id="questionnaire-phone" name="phone" placeholder="8 (960) 900-60-90" required>
           </fieldset>
           <h2 class="questionare__subtitle section-subtitle">Комментарий</h2>
           <textarea class="fields__comment" name="comment" id="" rows="8" placeholder="Расскажите обо всех повАдках кота"></textarea>
           <h2 class="questionare__subtitle section-subtitle">Дополнительно</h2>
-          <fieldset class="questionnare__fields fields">
-            <input class="fields__sucrose" type="checkbox" id="questionnare-sucrose" name="sucrose" checked>
-            <label for="questionnare-sucrose">сахарозаменитель</label>
-            <input class="fields__water" type="checkbox" id="questionnare-water" name="water">
-            <label for="questionnare-water">питьевая вода</label>
-            <input class="fields__milk" type="checkbox" id="questionnare-milk" name="milk">
-            <label for="questionnare-milk">молоко</label>
-            <input class="fields__vitamins" type="checkbox" id="questionnare-vitamins" name="vitamins">
-            <label for="questionnare-vitamins">витамины</label>
+          <fieldset class="questionnaire__fields fields">
+            <input class="fields__sucrose" type="checkbox" id="questionnaire-sucrose" name="sucrose" checked>
+            <label for="questionnaire-sucrose">сахарозаменитель</label>
+            <input class="fields__water" type="checkbox" id="questionnaire-water" name="water">
+            <label for="questionnaire-water">питьевая вода</label>
+            <input class="fields__milk" type="checkbox" id="questionnaire-milk" name="milk">
+            <label for="questionnaire-milk">молоко</label>
+            <input class="fields__vitamins" type="checkbox" id="questionnaire-vitamins" name="vitamins">
+            <label for="questionnaire-vitamins">витамины</label>
           </fieldset>
-          <button class="questionnare__submit-button button" type="submit">отправить заявку</button>
-          <p class="questionnare__clarification">* — Обязательные поля</p>
+          <button class="questionnaire__submit-button button" type="submit">отправить заявку</button>
+          <p class="questionnaire__clarification">* — Обязательные поля</p>
         </form>
       </section>
-      <section class="location">
+
+      <section class="location block-width">
         <h2 class="visually-hidden">Расположение офиса</h2>
-        <div class="location__description cat-energy-address">
-          <p class="cat-energy-address__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="cat-energy-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="location__description location__description--grey cat-energy-address">
+          <p class="cat-energy-address__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="cat-energy-address__address description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="location__map">
           <img class="location__waypoint" src="/source/img/waypoint.png" alt="Pacположение магазина" width="57" height="53">
         </div>
       </section>
+
     </main>
-    <footer class="main-footer">
+
+    <footer class="main-footer block-width">
       <a class="main-footer__name-logo" href="#"><img src="/source/img/footer_name_logo.svg" alt="лого кэт энерджи" width="128" height="24"></a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
