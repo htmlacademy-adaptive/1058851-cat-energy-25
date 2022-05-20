@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header block-width">
       <a href="#" class="main-header__logo">
         <img src="/source/img/cat_energy_logo.svg" alt="логотип кэт энерджи" width="33.3" height="37.6">
       </a>
@@ -17,18 +18,18 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#">
               главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               подбор программы
             </a>
@@ -37,9 +38,10 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-container__title">Каталог продукции</h1>
-      <section class="catalog">
-        <h2 class="visully-hidden">Основное питание</h2>
+      <h1 class="main-container__title block-width">Каталог продукции</h1>
+
+      <section class="catalog block-width">
+        <h2 class="visually-hidden">Основное питание</h2>
         <div class="catalog__card product-card">
           <img class="product-card__icon" src="/source/img/chicken_small.jpg" alt="корм с курицей" width="68" height="86">
           <h3 class="product-card__subtitle card-subtitle">Cat Energy PRO 500 г</h3>
@@ -181,7 +183,7 @@
         </div>
       </section>
 
-      <section class="extra-catalog">
+      <section class="extra-catalog block-width">
         <h2 class="extra-catalog__subtitle section-subtitle">Дополнительные товары</h2>
         <ul class="extra-catalog__list">
           <li class="extra-catalog__item extra-card">
@@ -219,7 +221,8 @@
       </ul>
       </section>
 
-      <section class="gift">
+      <section class="gift block-width">
+        <h2 class="visually-hidden">Подарок за заказ</h2>
         <div class="gift__wrapper">
           <div class="gift__icon"></div>
           <p class="gift__description">
@@ -228,11 +231,11 @@
         </div>
       </section>
 
-      <section class="location">
+      <section class="location block-width">
         <h2 class="visually-hidden">Расположение офиса</h2>
-        <div class="location__description cat-energy-address">
-          <p class="cat-energy-address__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="cat-energy-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="location__description location__description--grey cat-energy-address">
+          <p class="cat-energy-address__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="cat-energy-address__address description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="location__map">
           <img class="location__waypoint" src="/source/img/waypoint.png" alt="Pacположение магазина" width="57" height="53">
@@ -240,7 +243,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer block-width">
       <a class="main-footer__name-logo" href="#"><img src="/source/img/footer_name_logo.svg" alt="лого кэт энерджи" width="128" height="24"></a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
