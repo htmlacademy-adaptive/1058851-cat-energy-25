@@ -1,9 +1,30 @@
 .main-footer {
+  background-color: #f2f2f2;
+  min-width: 320px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 39px 20px 22px 20px;
 }
 
 .main-footer__social-list {
+  display: flex;
+
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    min-width: 1200px;
+  }
 }

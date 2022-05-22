@@ -3,7 +3,16 @@
 }
 
 .nutrition-workflow__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition-workflow__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
