@@ -4,3 +4,15 @@
   margin-right: auto;
   box-sizing: border-box;
 }
+
+@media (min-width: @tablet-width) {
+  .block-width {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .block-width {
+    min-width: @desktop-width;
+  }
+}
