@@ -1,53 +1,99 @@
-.main-header {
+.main-header__container {
+  .align-center;
+  width: 280px;
   display: flex;
-  flex-direction: column;
-  padding: 10px 20px 17.4px 20px;
-  background-color: #ffffff;
-  color: #111111;
-}
-
-.main-header__logos-list {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .main-header__logo {
-  display: block;
-  width: 33.3px;
-  height: 37.6px;
-  background-image: url("../img/header_logo_mobile.svg");
+  margin-right: 56px;
 }
 
-.main-header__name-logo {
-  display: block;
-  width: 101px;
-  height: 18px;
-  background-image: url("../img/header_logo_text_mobile.svg ");
+.main-header__logo svg {
+  width: 34px;
+  height: 38px;
+}
+
+.main-header__logo-image--desktop {
+  display: none;
+}
+
+.main-header__logo-image--tablet {
+  display: none;
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
-    flex-direction: row;
+    padding-top: 24px;
+    padding-bottom: 31px;
+    display: flex;
+    width: 709px;
+    .align-center;
+    justify-content: space-between;
+  }
+
+  .main-header__container {
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 
   .main-header__logo {
-    width: 174px;
-    height: 51.5px;
-    background-image: url("../img/header_logo_tablet.svg");
+    margin: 0;
   }
 
-  .main-header__name-logo {
+  .main-header__logo,
+  .main-header__logo svg {
+    width: 174px;
+    height: 52px;
+  }
+
+  .main-header__logo-image--mobile {
     display: none;
+  }
+
+  .main-header__logo-image--desktop {
+    display: none;
+  }
+
+  .main-header__logo-image--tablet {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-header__logo {
+  .main-header {
+    padding-top: 53px;
+    padding-bottom: 29px;
+    width: 1220px;
+  }
+
+  .main-header__logo,
+  .main-header__logo svg {
     width: 202px;
     height: 59px;
-    background-image: url("../img/header_logo_desktop.svg");
+  }
+
+  .main-header__logo-image--mobile {
+    display: none;
+  }
+
+  .main-header__logo-image--desktop {
+    display: block;
+  }
+
+  .main-header__logo-image--tablet {
+    display: none;
   }
 }
